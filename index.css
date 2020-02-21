@@ -57,6 +57,10 @@ main {
   text-decoration: underline;
 }
 
+.content-header a:focus {
+  color: #f06c64;
+}
+
 .slider {
   display: flex;
   padding: 0 40px;
@@ -69,11 +73,13 @@ main {
 .slider__left-arrow {
   margin-bottom: 2px;
   margin-left: 2px;
+  cursor: pointer;
 }
 
 .slider__right-arrow {
   padding-left: 55px;
   margin-bottom: 1px;
+  cursor: pointer;
 }
 
 .slider__vertical {
@@ -90,6 +96,7 @@ main {
   padding: 0px 40.5px;
   background-color: #f2f2f2;
   border-bottom: 6px solid #ffffff;
+  height: 494px;
 }
 
 .description-services {
@@ -141,6 +148,7 @@ main {
   color: #767e9e;
   font-size: 12px;
   line-height: 21px;
+  margin-left: 2px;
 }
 
 .advantage {
@@ -155,4 +163,8 @@ main {
 
 .advantage:nth-child(3n) h3 {
   margin-left: 4px;
+}
+
+.text-align-justify {
+  text-align-last: justify;
 }
