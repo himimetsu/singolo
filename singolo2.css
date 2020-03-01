@@ -50,6 +50,11 @@ body {
   cursor: pointer;
 }
 
+.portfolio__tab:hover {
+  color: white;
+  border-color: white;
+}
+
 .portfolio__tab:nth-child(1) {
   color: white;
   border-color: white;
@@ -90,8 +95,6 @@ body {
   height: 6px;
   background-color: #323746;;
 }
-
-
 
 .about-us {
   background-color: #f2f2f2;
@@ -164,4 +167,8 @@ body {
 .member-line {
   height: 6px;
   background-color: white;
+}
+
+.ml {
+  margin-left: 1px;
 }
