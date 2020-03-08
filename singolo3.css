@@ -1,0 +1,145 @@
+.getQuote {
+  padding: 0 40.5px;
+  background-color: #f06c64;
+}
+
+.getQuote__description__title {
+  margin: 0;
+  padding-top: 68px;
+  padding-bottom: 9px;
+  font-size: 30px;
+  line-height: 17px;
+  font-weight: 900;
+  color: #f0d8d9;
+}
+
+.getQuote__send-info {
+  display: flex;
+  margin-top: 44px;
+}
+
+.getQuote__send-info__forms {
+  margin-right: 22px;
+}
+
+.send-info__form {
+  width: 617px;
+  background-color: #d6564f;
+  border-width: 0;
+  border: 1px solid #d6564f;
+  border-radius: 5px;
+  height: 34px;
+}
+
+.send-info__form:nth-child(2),
+.send-info__form:nth-child(3),
+.send-info-forms textarea {
+  margin: 16px 0;
+}
+
+.send-info-forms textarea{
+  height: 202px;
+  padding: 0;
+}
+
+.send-info__form::placeholder {
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #f48c8f;
+}
+
+.getQuote__contacts__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 900;
+  color: #f0d8d9;
+}
+
+.getQuote__contacts__text {
+  text-align-last: justify;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #f0d8d9;
+}
+
+.getQuote__description__text {
+  text-align-last: justify;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #f0d8d9;
+}
+
+.send-info__button {
+  margin-top: 8px;
+  margin-bottom: 13px;
+  padding: 5px 15px;
+  color: white;
+  background-color: #d6564f;
+  border: 1px solid #d6564f;;
+  border-radius: 5px;
+  border-width: 0;
+}
+
+.bb {
+  margin-top: 26px;
+  font-size: 12px;
+  color: white;
+}
+
+.bb a {
+  color: white;
+  text-decoration: none;
+}
+
+.bb img {
+  margin-right: 5px;
+}
+
+.bb p {
+  margin: 0;
+}
+
+.bb p:nth-child(2) {
+  margin: 8px 0;
+}
+
+.getQuote-line {
+  height: 6px;
+  background-color: #ea676b;
+}
+
+footer {
+  background-color: #2d303a;
+}
+
+.footer {
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40.5px;
+  align-items: center;
+}
+
+.footer-text {
+  color: #666d89;
+  font-size: 12px;
+}
+
+.footer img:nth-child(2) {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.footer img:nth-child(3) {
+  margin-right: 4px;
+}
+
+.footer__soc img {
+  cursor: pointer;
+}
