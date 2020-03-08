@@ -404,7 +404,7 @@ body {
 }
 
 .getQuote__contacts__text {
-  text-align-last: justify;
+  text-align: justify;
   font-size: 12px;
   line-height: 21px;
   font-weight: 400;
