@@ -110,7 +110,7 @@ body {
 }
 
 .description-services .description-services__text {
-  text-align-last: justify;
+  text-align: justify;
   font-size: 18px;
   line-height: 31px;
   font-weight: 300;
@@ -129,10 +129,12 @@ body {
 
 .advantages__info {
   padding-left: 19px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .advantages__info p {
-  text-align-last: justify;
+  text-align: justify;
 }
 
 .advantages__info h3 {
@@ -144,17 +146,30 @@ body {
 }
 
 .advantages__info p {
+  margin-left: 2px;
+  text-align-last: justify;
   font-weight: 400;
   color: #767e9e;
   font-size: 12px;
   line-height: 21px;
-  margin-left: 2px;
 }
 
 .advantage {
   display: flex;
   width: 319px;
   margin-bottom: 35px;
+}
+
+.advantage:nth-child(1),
+.advantage:nth-child(2),
+.advantage:nth-child(4),
+.advantage:nth-child(5) {
+  max-width: 319px;
+}
+
+.advantage:nth-child(3),
+.advantage:nth-child(6) {
+  max-width: 300px;
 }
 
 .advantage:nth-child(3n) {
@@ -166,7 +181,7 @@ body {
 }
 
 .text-align-justify {
-  text-align-last: justify;
+  text-align: justify;
 }
 
 .portfolio {
@@ -200,7 +215,7 @@ body {
   padding: 0;
   margin: 0;
   margin-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 
 .portfolio__tab {
@@ -275,13 +290,11 @@ body {
 }
 
 .about-us__description {
-  margin: 0;
-  margin-top: 16px;
-  margin-bottom: 42px;
-  margin-left: 40px;
+  margin: 16px 40px 42px;
   text-align: justify;
+  text-align-last: justify;
   line-height: 32px;
-  font-size: 18px;
+  font-size: 17px;
   color: #767e9e;
 }
 
@@ -306,6 +319,7 @@ body {
   margin-bottom: 0px;
   max-width: 300px;
   overflow: hidden;
+  white-space: nowrap;
   font-size: 18px;
   line-height: 17px;
   font-weight: 900;
@@ -316,6 +330,7 @@ body {
   margin: 0;
   margin-top: 10px;
   margin-bottom: 24px;
+  text-align: justify;
   text-align-last: justify;
   font-size: 11px;
   line-height: 21px;
@@ -343,6 +358,7 @@ body {
 }
 
 .getQuote {
+  height: 648px;
   padding: 0 40.5px;
   background-color: #f06c64;
 }
@@ -412,6 +428,7 @@ body {
 }
 
 .getQuote__description__text {
+  text-align: justify;
   text-align-last: justify;
   font-size: 18px;
   line-height: 30px;
@@ -486,4 +503,8 @@ footer {
 
 .footer__soc img {
   cursor: pointer;
+}
+
+.footer__soc {
+  padding-top: 3px;
 }
