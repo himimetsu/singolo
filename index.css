@@ -1,7 +1,13 @@
 body {
+  position: sticky;
   width: 1020px;
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
 }
 
 .content-header {
@@ -235,16 +241,23 @@ body {
   border-color: white;
 }
 
-.portfolio__tab:nth-child(1) {
-  color: white;
-  border-color: white;
-}
-
 .portfolio__show-case {
   display: flex;
   height: 601px;
   flex-wrap: wrap;
   overflow: hidden;
+}
+
+.tab-section {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .portfolio-item__picture {
@@ -271,9 +284,20 @@ body {
   margin: auto;
 }
 
+.frame {
+  border: 5px solid #F06C64;
+  width: 210px;
+  height: 177px;
+}
+
 .portfolio__line {
   height: 6px;
   background-color: #323746;;
+}
+
+.portfolio-selected-tab {
+  color: white;
+  border-color: white;
 }
 
 .about-us {
@@ -447,6 +471,12 @@ body {
   border-width: 0;
 }
 
+header .nav .selectedSection a {
+  font-weight: bold;
+  color: red;
+  font-size: 14px;
+}
+
 .bb {
   margin-top: 26px;
   font-size: 12px;
@@ -507,4 +537,34 @@ footer {
 
 .footer__soc {
   padding-top: 3px;
+}
+
+.horizontal-switched {
+  height: 216px;
+  width: 460px;
+  position: absolute;
+}
+
+.vertical-switched {
+  height: 460px;
+  width: 216px;
+  position: absolute;
+}
+
+.ver-display {
+  height: 333px;
+  width: 189px;
+  margin: 0px 13px;
+  margin-top: 65px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.hor-display {
+  width: 333px;
+  height: 188px;
+  margin-top: 14px;
+  margin-left: 60px;
+  background-color: black;
+  border-radius: 4px;
 }
