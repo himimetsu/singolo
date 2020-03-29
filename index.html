@@ -3,72 +3,115 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="fonts.css">
-  <script src="./index.js"></script>
+  <script src="./script.js"></script>
   <title>Singolo</title>
 </head>
 
 <body>
-  <header class="header" id="home">
+  <header class="header">
     <div class="content-header">
+      <div class="burger-menu">
+        <div class="burger-icon">
+          <div class="white-line"></div>
+          <div class="white-line"></div>
+          <div class="white-line"></div>
+        </div>
+        
+        <div class="burger-list-menu hide">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a>Home</a>
+              </li>
+              <li class="nav__item">
+                <a>Services</a>
+              </li>
+              <li class="nav__item">
+                <a>Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a>About</a>
+              </li>
+              <li class="nav__item">
+                <a>Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
       <div class="logo">
         <h1>
           <img src="./assets/img/logo.png" alt="logo">
         </h1>
       </div>
   
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#services">Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="navigation">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a>Home</a>
+            </li>
+            <li class="nav__item">
+              <a>Services</a>
+            </li>
+            <li class="nav__item">
+              <a>Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a>About</a>
+            </li>
+            <li class="nav__item">
+              <a>Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="line">
-  
-    </div>
+
+    <div class="line"></div>
   </header>
   <main>
-    <section class="slider">
+    <section class="content-slider" id="home">
     
       <div class="slider__left-arrow">
-        <img src="./assets/img/left_arrow.png" alt="left-arrow">
+        <img src="./assets/img/slider/arrows/left_arrow.png" alt="left-arrow">
       </div>
-    
-      <div class="slider__vertical">
-        <div class="vertical-switched">
-          <div class="ver-display"></div>
-        </div>
-        <img src="./assets/img/vertical.png" alt="vertical">
-      </div>
-    
-      <div class="slider__horizontal">
-          <div class="horizontal-switched">
-            <div class="hor-display"></div>
+
+      <div class="slides" id="slide">
+        <div class="slide_single first_slide">
+          <div class="ver-phone">
+            <div class="ver-phone-black hide">
+            </div>
+            <img src="./assets/img/slider/slides/vertical.png" alt="">
           </div>
-        <img src="./assets/img/horizontal.png" alt="horizontal">
+          <div class="hor-phone">
+            <div class="hor-phone-black hide">
+            </div>
+            <img src="./assets/img/slider/slides/horizontal.png" alt="">
+          </div>
+        </div>
+
+        <div class="slide_single second_slide left">
+          <div class="touch-middle">
+
+          </div>
+          <div class="middle-phone">
+            <div class="middle-phone-black hide">
+            </div>
+            <img src="./assets/img/slider/slides/second-slide.png" alt="">
+          </div>
+        </div>
       </div>
-    
+
       <div class="slider__right-arrow">
-        <img src="./assets/img/right_arrow.png" alt="right-arrow">
+        <img src="./assets/img/slider/arrows/right_arrow.png" alt="right-arrow">
       </div>
-    
     </section>
-    
+
     <section class="our-services" id="services">
       <div class="description-services">
         <h1 class="description-services__title">
@@ -76,7 +119,7 @@
         </h1>
         <p class="description-services__text">
           <span style="letter-spacing: 0.14px;">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-            mollis, non commodo luctus, nisi erat porttitor </span> <br> ligula, eget lacinia odio sem nec elit. Fusce
+            mollis, non commodo luctus, nisi erat porttitor </span> ligula, eget lacinia odio sem nec elit. Fusce
           dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
         </p>
       </div>
@@ -84,7 +127,7 @@
       <div class="advantages-wrapper">
         <div class="advantage">
           <div class="advantage__icon">
-            <img src="./assets/img/pen.png" alt="pen">
+            <img src="./assets/img/oru-services/pen.png" alt="pen">
           </div>
           <div class="advantages__info">
             <h3>Custom Design</h3>
@@ -96,7 +139,7 @@
     
         <div class="advantage">
           <div class="advantage__icon">
-            <img src="./assets/img/bulb.png" alt="bulb">
+            <img src="./assets/img/oru-services/bulb.png" alt="bulb">
           </div>
           <div class="advantages__info">
             <h3>Inovative Ideas</h3>
@@ -108,7 +151,7 @@
     
         <div class="advantage">
           <div class="advantage__icon">
-            <img src="./assets/img/heart.png" alt="heart">
+            <img src="./assets/img/oru-services/heart.png" alt="heart">
           </div>
           <div class="advantages__info">
             <h3>Love Is The Answer</h3>
@@ -120,7 +163,7 @@
     
         <div class="advantage">
           <div class="advantage__icon">
-            <img src="./assets/img/phone.png" alt="phone">
+            <img src="./assets/img/oru-services/phone.png" alt="phone">
           </div>
           <div class="advantages__info">
             <h3>Responsive Layout</h3>
@@ -132,7 +175,7 @@
     
         <div class="advantage">
           <div class="advantage__icon">
-            <img src="./assets/img/message.png" alt="message">
+            <img src="./assets/img/oru-services/message.png" alt="message">
           </div>
           <div class="advantages__info">
             <h3>24 / 7 Support</h3>
@@ -144,7 +187,7 @@
     
         <div class="advantage">
           <div class="advantage__icon">
-            <img src="./assets/img/star.png" alt="star">
+            <img src="./assets/img/oru-services/star.png" alt="star">
           </div>
           <div class="advantages__info">
             <h3>Feel Like A Star</h3>
@@ -184,206 +227,206 @@
       <div class="tab-section show">
         <div class="portfolio__show-case portfolio-item">
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_1.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_1.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_2.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_2.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_3.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_3.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_4.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_4.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_5.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_5.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_6.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_6.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_7.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_7.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_8.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_8.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_9.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_9.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_10.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_10.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_11.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_11.png" width="220" height="187"></img>
           </div>
-        
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_12.svg" width="220" height="187"></img>
-          </div>
-        </div>
-      </div>
-
-      <div class="tab-section">
-        <div class="portfolio__show-case portfolio-item">
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_12.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_11.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_10.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_9.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_8.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_7.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_6.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_5.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_4.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_3.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_2.svg" width="220" height="187"></img>
-          </div>
-
-          <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_1.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_12.png" width="220" height="187"></img>
           </div>
         </div>
       </div>
-
+    
       <div class="tab-section">
         <div class="portfolio__show-case portfolio-item">
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_8.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_12.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_4.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_11.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_1.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_10.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_9.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_9.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_3.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_8.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_5.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_7.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_12.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_6.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_6.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_5.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_2.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_4.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_10.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_3.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_11.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_2.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_7.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_1.png" width="220" height="187"></img>
           </div>
         </div>
       </div>
-
+    
       <div class="tab-section">
         <div class="portfolio__show-case portfolio-item">
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_6.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_8.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_4.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_1.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_9.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_3.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_5.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_12.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_6.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_2.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_10.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_11.png" width="220" height="187"></img>
+          </div>
+    
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_7.png" width="220" height="187"></img>
+          </div>
+        </div>
+      </div>
+    
+      <div class="tab-section">
+        <div class="portfolio__show-case portfolio-item">
+          <div class="portfolio-item__picture">
+            <img src="./assets/img/portfolio/portfolio-item__picture_6.png" width="220" height="187"></img>
           </div>
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_12.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_12.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_5.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_5.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_2.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_2.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_7.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_7.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_1.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_1.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_10.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_10.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_3.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_3.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_9.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_9.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_8.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_8.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_4.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_4.png" width="220" height="187"></img>
           </div>
-
+    
           <div class="portfolio-item__picture">
-            <img src="./assets/img/portfolio/portfolio-item__picture_7.svg" width="220" height="187"></img>
+            <img src="./assets/img/portfolio/portfolio-item__picture_7.png" width="220" height="187"></img>
           </div>
         </div>
       </div>
@@ -398,8 +441,7 @@
       <p class="about-us__description">
         <span>
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
-          porttitor <br>
-          ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+          porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
         </span>
       </p>
     
@@ -413,7 +455,7 @@
               Adam Jensen
             </h3>
             <p class="member__description">
-              Quisque luctus, quam eget molestie commodo, lacus purus <br>
+              Quisque luctus, quam eget molestie commodo, lacus purus
               cursus purus, nec rutrum tellus dolor id lorem.
             </p>
             <div class="member-linked ml">
@@ -435,6 +477,7 @@
             </div>
           </div>
         </div>
+
         <div class="our-team__member">
           <div class="member__photo">
             <object data="./assets/img/members/member_2.svg" type="image/svg+xml"></object>
@@ -445,7 +488,7 @@
             </h3>
             <p class="member__description">
               <span>
-                Curabitur vestibulum eget mauris quis laoreet. Phasellus <br> in quam laoreet, viverra lacus ut, ultrices
+                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices
                 velit.
               </span>
             </p>
@@ -468,6 +511,7 @@
             </div>
           </div>
         </div>
+
         <div class="our-team__member">
           <div class="member__photo">
             <object data="./assets/img/members/member_3.svg" type="image/svg+xml"></object>
@@ -509,31 +553,36 @@
           Get a Quote
         </h1>
         <p class="getQuote__description__text">
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor <br>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
+          porttitor
           ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
         </p>
       </div>
-
+    
       <div class="getQuote__send-info">
         <div class="getQuote__send-info__forms">
-          <form class="send-info-forms" name="singolo" method="POST" action="">
+          <form class="send-info-forms" name="singolo">
             <input class="send-info__form" type="text" placeholder="Name (Required)"> <br>
             <input class="send-info__form" type="email" placeholder="Email (Required)"> <br>
-
+    
             <input class="send-info__form" type="text" placeholder="Subject"> <br>
-
-            <textarea class="send-info__form" name="" id="" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-
-            <input class="send-info__button" type="submit" value="Submit">
+    
+            <textarea class="send-info__form" name="" id="" cols="30" rows="10"
+              placeholder="Describe your project in detail..." maxlength="200"></textarea>
+    
+            <button class="send-info__button" type="button">
+              Submit
+            </button>
           </form>
         </div>
-
+    
         <div class="getQuote__contacts">
           <h1 class="getQuote__contacts__title">
             Contact Information
           </h1>
           <p class="getQuote__contacts__text">
-            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat
+            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet
+            volutpat
             libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
           </p>
           <div class="bb">
@@ -552,21 +601,26 @@
           </div>
         </div>
       </div>
+      <div class="modal hide">
+        <div class="modal-bg">
+        </div>
+      </div>
     </section>
     <div class="getQuote-line"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer-text">
+        © Copyright 2013
+      </div>
+    
+      <div class="footer__soc">
+        <img src="./assets/img/footer/footer-fc.png" alt="facebook">
+        <img src="./assets/img/footer/footer-go.png" alt="google">
+        <img src="./assets/img/footer/footer-tw.png" alt="twitter">
+        <img src="./assets/img/footer/footer-li.png" alt="linkedin">
+      </div>
+    </footer>
   </main>
-  <footer class="footer">
-    <div class="footer-text">
-      © Copyright 2013
-    </div>
-
-    <div class="footer__soc">
-      <img src="./assets/img/footer/footer-fc.png" alt="facebook">
-      <img src="./assets/img/footer/footer-go.png" alt="google">
-      <img src="./assets/img/footer/footer-tw.png" alt="twitter">
-      <img src="./assets/img/footer/footer-li.png" alt="linkedin">
-    </div>
-  </footer>
 </body>
 
 </html>
